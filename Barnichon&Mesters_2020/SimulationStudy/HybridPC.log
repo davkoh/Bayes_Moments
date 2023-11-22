@@ -1,0 +1,61 @@
+Starting Dynare (version 4.5.4).
+Starting preprocessing of the model file ...
+Substitution of endo lags >= 2: added 1 auxiliary variables and equations.
+Found 6 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...
+done
+Preprocessing completed.
+
+STEADY-STATE RESULTS:
+
+ppi              		 0
+y_gap            		 0
+mpshock          		 0
+cp               		 0
+mp               		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+               0               -0               -0
+        8.55e-49        7.647e-49       -3.823e-49
+          0.6325              0.6             -0.2
+          0.6325              0.6              0.2
+          0.7847           0.7847        -1.66e-16
+           2.549            2.549         5.08e-16
+
+
+There are 1 eigenvalue(s) larger than 1 in modulus 
+for 1 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         6
+  Number of stochastic shocks: 2
+  Number of state variables:   5
+  Number of jumpers:           1
+  Number of static variables:  1
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables      eps_nu    eps_cp
+eps_nu       1.000000  0.000000
+eps_cp       0.000000  1.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                 ppi           y_gap         mpshock              cp              mp
+y_gap(-1)                   0.923748        1.200000               0               0               0
+y_gap(-2)                  -0.354249       -0.400000               0               0               0
+ppi(-1)                     0.784750               0               0               0               0
+eps_nu                      0.088562        0.100000        0.100000               0        0.100000
+eps_cp                      0.422294       -1.000000               0        1.000000               0
+Total computing time : 0h00m00s
